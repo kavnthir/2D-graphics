@@ -23,15 +23,12 @@ void RayWidget::paintEvent(QPaintEvent *event){
 	painter.setPen(pen);
 	painter.translate(pos);
 
-	int stepSize = 2;
-	for(int i = 0; i < 360; i+=stepSize){
+	double stepSize = 2;
+	for(double i = 0; i < 360; i+=stepSize){
 		painter.drawLine(QPoint(0, 0), QPoint(0, 0) + QPoint(0, - 1000));
 		painter.rotate(stepSize);
 
 	}
-
-
-
 	
 }
 
