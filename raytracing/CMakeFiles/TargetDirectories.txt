@@ -1,0 +1,4 @@
+/home/kavnthir/Repos/2D-graphics/raytracing/CMakeFiles/demo.dir
+/home/kavnthir/Repos/2D-graphics/raytracing/CMakeFiles/edit_cache.dir
+/home/kavnthir/Repos/2D-graphics/raytracing/CMakeFiles/rebuild_cache.dir
+/home/kavnthir/Repos/2D-graphics/raytracing/CMakeFiles/demo_autogen.dir
