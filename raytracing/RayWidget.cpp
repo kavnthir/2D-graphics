@@ -21,10 +21,9 @@ void RayWidget::paintEvent(QPaintEvent *event){
 	QDesktopWidget desktop;
 	QPainter painter(this);
 	QPen pen(Qt::white);
+	pen.setWidthF(1);
 	painter.setPen(pen);
 	painter.translate(pos);
-
-
 
 	double stepSize = 3;
 	for(double i = 0; i < 360; i+=stepSize){

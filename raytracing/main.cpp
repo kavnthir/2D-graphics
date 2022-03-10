@@ -7,7 +7,6 @@
 #include <QPainter>
 #include <QCursor>
 #include <QTimer>
-
 #include <iostream>
 
 int main(int argc, char *argv[]){
@@ -23,15 +22,16 @@ int main(int argc, char *argv[]){
 	QString style = QLatin1String(file.readAll());
 	qApp->setStyleSheet(style);
 
+	// Init Window and Timer
 	RayWidget source;
 	QTimer *timer = new QTimer();
-
 	QObject::connect(timer, SIGNAL(timeout()), &source, SLOT(updatePos()));
 
-	// Set Window Visibility
+	// Start Window and Timer
 	source.setFixedSize(desktop.width()*0.7,desktop.height()*0.7);
 	source.show();
-	timer->start(25);
+	timer->start(0);
+
 	return app.exec();
 }
 
