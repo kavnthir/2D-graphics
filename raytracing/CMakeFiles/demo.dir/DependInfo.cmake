@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/kavnthir/Repos/2D-graphics/raytracing/RayWidget.cpp" "CMakeFiles/demo.dir/RayWidget.cpp.o" "gcc" "CMakeFiles/demo.dir/RayWidget.cpp.o.d"
   "/home/kavnthir/Repos/2D-graphics/raytracing/demo_autogen/mocs_compilation.cpp" "CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o.d"
   "/home/kavnthir/Repos/2D-graphics/raytracing/main.cpp" "CMakeFiles/demo.dir/main.cpp.o" "gcc" "CMakeFiles/demo.dir/main.cpp.o.d"
   )

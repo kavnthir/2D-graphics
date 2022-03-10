@@ -1,5 +1,5 @@
-CMakeFiles/demo.dir/main.cpp.o: \
- /home/kavnthir/Repos/2D-graphics/raytracing/main.cpp \
+CMakeFiles/demo.dir/RayWidget.cpp.o: \
+ /home/kavnthir/Repos/2D-graphics/raytracing/RayWidget.cpp \
  /usr/include/stdc-predef.h \
  /home/kavnthir/Repos/2D-graphics/raytracing/RayWidget.h \
  /usr/include/qt/QtWidgets/QWidget /usr/include/qt/QtWidgets/qwidget.h \
@@ -246,19 +246,4 @@ CMakeFiles/demo.dir/main.cpp.o: \
  /usr/include/c++/11.2.0/bits/locale_facets.tcc \
  /usr/include/c++/11.2.0/bits/basic_ios.tcc \
  /usr/include/c++/11.2.0/bits/ostream.tcc /usr/include/c++/11.2.0/istream \
- /usr/include/c++/11.2.0/bits/istream.tcc \
- /usr/include/qt/QtWidgets/QApplication \
- /usr/include/qt/QtWidgets/qapplication.h \
- /usr/include/qt/QtCore/qcoreapplication.h \
- /usr/include/qt/QtCore/qcoreevent.h /usr/include/qt/QtCore/qeventloop.h \
- /usr/include/qt/QtGui/qguiapplication.h \
- /usr/include/qt/QtGui/qinputmethod.h /usr/include/qt/QtCore/qlocale.h \
- /usr/include/qt/QtCore/qvariant.h /usr/include/qt/QtCore/qmap.h \
- /usr/include/c++/11.2.0/variant \
- /usr/include/c++/11.2.0/bits/enable_special_members.h \
- /usr/include/qt/QtWidgets/QDesktopWidget \
- /usr/include/qt/QtWidgets/qdesktopwidget.h \
- /usr/include/qt/QtWidgets/qwidget.h /usr/include/qt/QtCore/QFile \
- /usr/include/qt/QtCore/qfile.h /usr/include/qt/QtCore/qfiledevice.h \
- /usr/include/qt/QtCore/QTimer /usr/include/qt/QtCore/qtimer.h \
- /usr/include/qt/QtCore/qbasictimer.h
+ /usr/include/c++/11.2.0/bits/istream.tcc

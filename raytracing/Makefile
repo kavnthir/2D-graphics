@@ -142,6 +142,30 @@ demo_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo_autogen.dir/build.make CMakeFiles/demo_autogen.dir/build
 .PHONY : demo_autogen/fast
 
+RayWidget.o: RayWidget.cpp.o
+.PHONY : RayWidget.o
+
+# target to build an object file
+RayWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/RayWidget.cpp.o
+.PHONY : RayWidget.cpp.o
+
+RayWidget.i: RayWidget.cpp.i
+.PHONY : RayWidget.i
+
+# target to preprocess a source file
+RayWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/RayWidget.cpp.i
+.PHONY : RayWidget.cpp.i
+
+RayWidget.s: RayWidget.cpp.s
+.PHONY : RayWidget.s
+
+# target to generate assembly for a file
+RayWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/RayWidget.cpp.s
+.PHONY : RayWidget.cpp.s
+
 demo_autogen/mocs_compilation.o: demo_autogen/mocs_compilation.cpp.o
 .PHONY : demo_autogen/mocs_compilation.o
 
@@ -200,6 +224,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... demo_autogen"
 	@echo "... demo"
+	@echo "... RayWidget.o"
+	@echo "... RayWidget.i"
+	@echo "... RayWidget.s"
 	@echo "... demo_autogen/mocs_compilation.o"
 	@echo "... demo_autogen/mocs_compilation.i"
 	@echo "... demo_autogen/mocs_compilation.s"
