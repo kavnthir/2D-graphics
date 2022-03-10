@@ -18,14 +18,17 @@ void RayWidget::updatePos(){
 
 void RayWidget::paintEvent(QPaintEvent *event){
 
+	QDesktopWidget desktop;
 	QPainter painter(this);
 	QPen pen(Qt::white);
 	painter.setPen(pen);
 	painter.translate(pos);
 
-	double stepSize = 2;
+
+
+	double stepSize = 3;
 	for(double i = 0; i < 360; i+=stepSize){
-		painter.drawLine(QPoint(0, 0), QPoint(0, 0) + QPoint(0, - 1000));
+		painter.drawLine(QPoint(0, 0), QPoint(0, 0) + QPoint(0, - desktop.width()));
 		painter.rotate(stepSize);
 
 	}
