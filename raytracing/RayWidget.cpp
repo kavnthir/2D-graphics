@@ -21,7 +21,17 @@ void RayWidget::paintEvent(QPaintEvent *event){
 	QPainter painter(this);
 	QPen pen(Qt::white);
 	painter.setPen(pen);
-	painter.drawEllipse(pos, 1, 1);
+	painter.translate(pos);
+
+	int stepSize = 2;
+	for(int i = 0; i < 360; i+=stepSize){
+		painter.drawLine(QPoint(0, 0), QPoint(0, 0) + QPoint(0, - 1000));
+		painter.rotate(stepSize);
+
+	}
+
+
+
 	
 }
 

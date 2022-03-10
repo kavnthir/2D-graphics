@@ -25,7 +25,6 @@ int main(int argc, char *argv[]){
 
 	RayWidget source;
 	QTimer *timer = new QTimer();
-	int ret;
 
 	QObject::connect(timer, SIGNAL(timeout()), &source, SLOT(updatePos()));
 
@@ -33,9 +32,7 @@ int main(int argc, char *argv[]){
 	source.setFixedSize(desktop.width()*0.7,desktop.height()*0.7);
 	source.show();
 	timer->start(25);
-	ret = app.exec();
-	delete timer;
-	return ret;
+	return app.exec();
 }
 
 
