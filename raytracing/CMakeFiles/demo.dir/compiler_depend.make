@@ -4,8 +4,8 @@
 CMakeFiles/demo.dir/RayWidget.cpp.o: RayWidget.cpp \
   /usr/include/stdc-predef.h \
   RayWidget.h \
-  /usr/include/qt/QtWidgets/QWidget \
-  /usr/include/qt/QtWidgets/qwidget.h \
+  /usr/include/qt/QtWidgets/QApplication \
+  /usr/include/qt/QtWidgets/qapplication.h \
   /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
   /usr/include/qt/QtGui/qtguiglobal.h \
   /usr/include/qt/QtCore/qglobal.h \
@@ -149,15 +149,12 @@ CMakeFiles/demo.dir/RayWidget.cpp.o: RayWidget.cpp \
   /usr/include/qt/QtCore/qversiontagging.h \
   /usr/include/qt/QtGui/qtgui-config.h \
   /usr/include/qt/QtWidgets/qtwidgets-config.h \
-  /usr/include/qt/QtGui/qwindowdefs.h \
-  /usr/include/qt/QtCore/qobjectdefs.h \
-  /usr/include/qt/QtCore/qnamespace.h \
-  /usr/include/qt/QtCore/qobjectdefs_impl.h \
-  /usr/include/qt/QtCore/qobject.h \
+  /usr/include/qt/QtCore/qcoreapplication.h \
   /usr/include/qt/QtCore/qstring.h \
   /usr/include/qt/QtCore/qchar.h \
   /usr/include/qt/QtCore/qbytearray.h \
   /usr/include/qt/QtCore/qrefcount.h \
+  /usr/include/qt/QtCore/qnamespace.h \
   /usr/include/qt/QtCore/qarraydata.h \
   /usr/include/string.h \
   /usr/include/strings.h \
@@ -242,6 +239,9 @@ CMakeFiles/demo.dir/RayWidget.cpp.o: RayWidget.cpp \
   /usr/include/qt/QtCore/qstringliteral.h \
   /usr/include/qt/QtCore/qstringalgorithms.h \
   /usr/include/qt/QtCore/qstringview.h \
+  /usr/include/qt/QtCore/qobject.h \
+  /usr/include/qt/QtCore/qobjectdefs.h \
+  /usr/include/qt/QtCore/qobjectdefs_impl.h \
   /usr/include/qt/QtCore/qlist.h \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qiterator.h \
@@ -284,11 +284,27 @@ CMakeFiles/demo.dir/RayWidget.cpp.o: RayWidget.cpp \
   /usr/include/c++/11.2.0/limits \
   /usr/include/c++/11.2.0/ctime \
   /usr/include/c++/11.2.0/bits/parse_numbers.h \
+  /usr/include/qt/QtCore/qcoreevent.h \
+  /usr/include/qt/QtCore/qeventloop.h \
+  /usr/include/qt/QtGui/qwindowdefs.h \
+  /usr/include/qt/QtCore/qpoint.h \
+  /usr/include/qt/QtCore/qsize.h \
   /usr/include/qt/QtCore/qmargins.h \
+  /usr/include/qt/QtGui/qcursor.h \
+  /usr/include/qt/QtGui/qguiapplication.h \
+  /usr/include/qt/QtGui/qinputmethod.h \
+  /usr/include/qt/QtCore/qlocale.h \
+  /usr/include/qt/QtCore/qvariant.h \
+  /usr/include/qt/QtCore/qmap.h \
+  /usr/include/qt/QtCore/qhash.h \
+  /usr/include/c++/11.2.0/variant \
+  /usr/include/c++/11.2.0/bits/enable_special_members.h \
+  /usr/include/qt/QtCore/qshareddata.h \
+  /usr/include/qt/QtWidgets/QDesktopWidget \
+  /usr/include/qt/QtWidgets/qdesktopwidget.h \
+  /usr/include/qt/QtWidgets/qwidget.h \
   /usr/include/qt/QtGui/qpaintdevice.h \
   /usr/include/qt/QtCore/qrect.h \
-  /usr/include/qt/QtCore/qsize.h \
-  /usr/include/qt/QtCore/qpoint.h \
   /usr/include/qt/QtGui/qpalette.h \
   /usr/include/qt/QtGui/qcolor.h \
   /usr/include/qt/QtGui/qrgb.h \
@@ -305,8 +321,6 @@ CMakeFiles/demo.dir/RayWidget.cpp.o: RayWidget.cpp \
   /usr/include/qt/QtGui/qpixelformat.h \
   /usr/include/qt/QtGui/qpixmap.h \
   /usr/include/qt/QtCore/qsharedpointer.h \
-  /usr/include/qt/QtCore/qshareddata.h \
-  /usr/include/qt/QtCore/qhash.h \
   /usr/include/qt/QtCore/qsharedpointer_impl.h \
   /usr/include/c++/11.2.0/memory \
   /usr/include/c++/11.2.0/bits/stl_raw_storage_iter.h \
@@ -322,8 +336,9 @@ CMakeFiles/demo.dir/RayWidget.cpp.o: RayWidget.cpp \
   /usr/include/qt/QtGui/qfontmetrics.h \
   /usr/include/qt/QtGui/qfontinfo.h \
   /usr/include/qt/QtWidgets/qsizepolicy.h \
-  /usr/include/qt/QtGui/qcursor.h \
   /usr/include/qt/QtGui/qkeysequence.h \
+  /usr/include/qt/QtWidgets/QWidget \
+  /usr/include/qt/QtWidgets/qwidget.h \
   /usr/include/qt/QtGui/QPainter \
   /usr/include/qt/QtGui/qpainter.h \
   /usr/include/qt/QtGui/qtextoption.h \
@@ -482,8 +497,8 @@ CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o: demo_autogen/mocs_compi
   /usr/include/c++/11.2.0/pstl/glue_memory_defs.h \
   /usr/include/c++/11.2.0/pstl/execution_defs.h \
   RayWidget.h \
-  /usr/include/qt/QtWidgets/QWidget \
-  /usr/include/qt/QtWidgets/qwidget.h \
+  /usr/include/qt/QtWidgets/QApplication \
+  /usr/include/qt/QtWidgets/qapplication.h \
   /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
   /usr/include/qt/QtGui/qtguiglobal.h \
   /usr/include/qt/QtCore/qglobal.h \
@@ -540,15 +555,12 @@ CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o: demo_autogen/mocs_compi
   /usr/include/qt/QtCore/qversiontagging.h \
   /usr/include/qt/QtGui/qtgui-config.h \
   /usr/include/qt/QtWidgets/qtwidgets-config.h \
-  /usr/include/qt/QtGui/qwindowdefs.h \
-  /usr/include/qt/QtCore/qobjectdefs.h \
-  /usr/include/qt/QtCore/qnamespace.h \
-  /usr/include/qt/QtCore/qobjectdefs_impl.h \
-  /usr/include/qt/QtCore/qobject.h \
+  /usr/include/qt/QtCore/qcoreapplication.h \
   /usr/include/qt/QtCore/qstring.h \
   /usr/include/qt/QtCore/qchar.h \
   /usr/include/qt/QtCore/qbytearray.h \
   /usr/include/qt/QtCore/qrefcount.h \
+  /usr/include/qt/QtCore/qnamespace.h \
   /usr/include/qt/QtCore/qarraydata.h \
   /usr/include/string.h \
   /usr/include/strings.h \
@@ -600,6 +612,9 @@ CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o: demo_autogen/mocs_compi
   /usr/include/qt/QtCore/qstringliteral.h \
   /usr/include/qt/QtCore/qstringalgorithms.h \
   /usr/include/qt/QtCore/qstringview.h \
+  /usr/include/qt/QtCore/qobject.h \
+  /usr/include/qt/QtCore/qobjectdefs.h \
+  /usr/include/qt/QtCore/qobjectdefs_impl.h \
   /usr/include/qt/QtCore/qlist.h \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qiterator.h \
@@ -640,11 +655,27 @@ CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o: demo_autogen/mocs_compi
   /usr/include/c++/11.2.0/limits \
   /usr/include/c++/11.2.0/ctime \
   /usr/include/c++/11.2.0/bits/parse_numbers.h \
+  /usr/include/qt/QtCore/qcoreevent.h \
+  /usr/include/qt/QtCore/qeventloop.h \
+  /usr/include/qt/QtGui/qwindowdefs.h \
+  /usr/include/qt/QtCore/qpoint.h \
+  /usr/include/qt/QtCore/qsize.h \
   /usr/include/qt/QtCore/qmargins.h \
+  /usr/include/qt/QtGui/qcursor.h \
+  /usr/include/qt/QtGui/qguiapplication.h \
+  /usr/include/qt/QtGui/qinputmethod.h \
+  /usr/include/qt/QtCore/qlocale.h \
+  /usr/include/qt/QtCore/qvariant.h \
+  /usr/include/qt/QtCore/qmap.h \
+  /usr/include/qt/QtCore/qhash.h \
+  /usr/include/c++/11.2.0/variant \
+  /usr/include/c++/11.2.0/bits/enable_special_members.h \
+  /usr/include/qt/QtCore/qshareddata.h \
+  /usr/include/qt/QtWidgets/QDesktopWidget \
+  /usr/include/qt/QtWidgets/qdesktopwidget.h \
+  /usr/include/qt/QtWidgets/qwidget.h \
   /usr/include/qt/QtGui/qpaintdevice.h \
   /usr/include/qt/QtCore/qrect.h \
-  /usr/include/qt/QtCore/qsize.h \
-  /usr/include/qt/QtCore/qpoint.h \
   /usr/include/qt/QtGui/qpalette.h \
   /usr/include/qt/QtGui/qcolor.h \
   /usr/include/qt/QtGui/qrgb.h \
@@ -661,15 +692,14 @@ CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o: demo_autogen/mocs_compi
   /usr/include/qt/QtGui/qpixelformat.h \
   /usr/include/qt/QtGui/qpixmap.h \
   /usr/include/qt/QtCore/qsharedpointer.h \
-  /usr/include/qt/QtCore/qshareddata.h \
-  /usr/include/qt/QtCore/qhash.h \
   /usr/include/qt/QtCore/qsharedpointer_impl.h \
   /usr/include/qt/QtGui/qfont.h \
   /usr/include/qt/QtGui/qfontmetrics.h \
   /usr/include/qt/QtGui/qfontinfo.h \
   /usr/include/qt/QtWidgets/qsizepolicy.h \
-  /usr/include/qt/QtGui/qcursor.h \
   /usr/include/qt/QtGui/qkeysequence.h \
+  /usr/include/qt/QtWidgets/QWidget \
+  /usr/include/qt/QtWidgets/qwidget.h \
   /usr/include/qt/QtGui/QPainter \
   /usr/include/qt/QtGui/qpainter.h \
   /usr/include/qt/QtGui/qtextoption.h \
@@ -695,8 +725,8 @@ CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o: demo_autogen/mocs_compi
 CMakeFiles/demo.dir/main.cpp.o: main.cpp \
   /usr/include/stdc-predef.h \
   RayWidget.h \
-  /usr/include/qt/QtWidgets/QWidget \
-  /usr/include/qt/QtWidgets/qwidget.h \
+  /usr/include/qt/QtWidgets/QApplication \
+  /usr/include/qt/QtWidgets/qapplication.h \
   /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
   /usr/include/qt/QtGui/qtguiglobal.h \
   /usr/include/qt/QtCore/qglobal.h \
@@ -840,15 +870,12 @@ CMakeFiles/demo.dir/main.cpp.o: main.cpp \
   /usr/include/qt/QtCore/qversiontagging.h \
   /usr/include/qt/QtGui/qtgui-config.h \
   /usr/include/qt/QtWidgets/qtwidgets-config.h \
-  /usr/include/qt/QtGui/qwindowdefs.h \
-  /usr/include/qt/QtCore/qobjectdefs.h \
-  /usr/include/qt/QtCore/qnamespace.h \
-  /usr/include/qt/QtCore/qobjectdefs_impl.h \
-  /usr/include/qt/QtCore/qobject.h \
+  /usr/include/qt/QtCore/qcoreapplication.h \
   /usr/include/qt/QtCore/qstring.h \
   /usr/include/qt/QtCore/qchar.h \
   /usr/include/qt/QtCore/qbytearray.h \
   /usr/include/qt/QtCore/qrefcount.h \
+  /usr/include/qt/QtCore/qnamespace.h \
   /usr/include/qt/QtCore/qarraydata.h \
   /usr/include/string.h \
   /usr/include/strings.h \
@@ -933,6 +960,9 @@ CMakeFiles/demo.dir/main.cpp.o: main.cpp \
   /usr/include/qt/QtCore/qstringliteral.h \
   /usr/include/qt/QtCore/qstringalgorithms.h \
   /usr/include/qt/QtCore/qstringview.h \
+  /usr/include/qt/QtCore/qobject.h \
+  /usr/include/qt/QtCore/qobjectdefs.h \
+  /usr/include/qt/QtCore/qobjectdefs_impl.h \
   /usr/include/qt/QtCore/qlist.h \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qiterator.h \
@@ -975,11 +1005,27 @@ CMakeFiles/demo.dir/main.cpp.o: main.cpp \
   /usr/include/c++/11.2.0/limits \
   /usr/include/c++/11.2.0/ctime \
   /usr/include/c++/11.2.0/bits/parse_numbers.h \
+  /usr/include/qt/QtCore/qcoreevent.h \
+  /usr/include/qt/QtCore/qeventloop.h \
+  /usr/include/qt/QtGui/qwindowdefs.h \
+  /usr/include/qt/QtCore/qpoint.h \
+  /usr/include/qt/QtCore/qsize.h \
   /usr/include/qt/QtCore/qmargins.h \
+  /usr/include/qt/QtGui/qcursor.h \
+  /usr/include/qt/QtGui/qguiapplication.h \
+  /usr/include/qt/QtGui/qinputmethod.h \
+  /usr/include/qt/QtCore/qlocale.h \
+  /usr/include/qt/QtCore/qvariant.h \
+  /usr/include/qt/QtCore/qmap.h \
+  /usr/include/qt/QtCore/qhash.h \
+  /usr/include/c++/11.2.0/variant \
+  /usr/include/c++/11.2.0/bits/enable_special_members.h \
+  /usr/include/qt/QtCore/qshareddata.h \
+  /usr/include/qt/QtWidgets/QDesktopWidget \
+  /usr/include/qt/QtWidgets/qdesktopwidget.h \
+  /usr/include/qt/QtWidgets/qwidget.h \
   /usr/include/qt/QtGui/qpaintdevice.h \
   /usr/include/qt/QtCore/qrect.h \
-  /usr/include/qt/QtCore/qsize.h \
-  /usr/include/qt/QtCore/qpoint.h \
   /usr/include/qt/QtGui/qpalette.h \
   /usr/include/qt/QtGui/qcolor.h \
   /usr/include/qt/QtGui/qrgb.h \
@@ -996,8 +1042,6 @@ CMakeFiles/demo.dir/main.cpp.o: main.cpp \
   /usr/include/qt/QtGui/qpixelformat.h \
   /usr/include/qt/QtGui/qpixmap.h \
   /usr/include/qt/QtCore/qsharedpointer.h \
-  /usr/include/qt/QtCore/qshareddata.h \
-  /usr/include/qt/QtCore/qhash.h \
   /usr/include/qt/QtCore/qsharedpointer_impl.h \
   /usr/include/c++/11.2.0/memory \
   /usr/include/c++/11.2.0/bits/stl_raw_storage_iter.h \
@@ -1013,8 +1057,9 @@ CMakeFiles/demo.dir/main.cpp.o: main.cpp \
   /usr/include/qt/QtGui/qfontmetrics.h \
   /usr/include/qt/QtGui/qfontinfo.h \
   /usr/include/qt/QtWidgets/qsizepolicy.h \
-  /usr/include/qt/QtGui/qcursor.h \
   /usr/include/qt/QtGui/qkeysequence.h \
+  /usr/include/qt/QtWidgets/QWidget \
+  /usr/include/qt/QtWidgets/qwidget.h \
   /usr/include/qt/QtGui/QPainter \
   /usr/include/qt/QtGui/qpainter.h \
   /usr/include/qt/QtGui/qtextoption.h \
@@ -1036,23 +1081,6 @@ CMakeFiles/demo.dir/main.cpp.o: main.cpp \
   /usr/include/c++/11.2.0/bits/ostream.tcc \
   /usr/include/c++/11.2.0/istream \
   /usr/include/c++/11.2.0/bits/istream.tcc \
-  /usr/include/qt/QtWidgets/QApplication \
-  /usr/include/qt/QtWidgets/qapplication.h \
-  /usr/include/qt/QtCore/qcoreapplication.h \
-  /usr/include/qt/QtCore/qcoreevent.h \
-  /usr/include/qt/QtCore/qeventloop.h \
-  /usr/include/qt/QtGui/qguiapplication.h \
-  /usr/include/qt/QtGui/qinputmethod.h \
-  /usr/include/qt/QtCore/qlocale.h \
-  /usr/include/qt/QtCore/qvariant.h \
-  /usr/include/qt/QtCore/qmap.h \
-  /usr/include/c++/11.2.0/variant \
-  /usr/include/c++/11.2.0/bits/enable_special_members.h \
-  /usr/include/qt/QtCore/QEventLoop \
-  /usr/include/qt/QtCore/qeventloop.h \
-  /usr/include/qt/QtWidgets/QDesktopWidget \
-  /usr/include/qt/QtWidgets/qdesktopwidget.h \
-  /usr/include/qt/QtWidgets/qwidget.h \
   /usr/include/qt/QtCore/QFile \
   /usr/include/qt/QtCore/qfile.h \
   /usr/include/qt/QtCore/qfiledevice.h \
@@ -1064,26 +1092,6 @@ CMakeFiles/demo.dir/main.cpp.o: main.cpp \
 /usr/include/qt/QtCore/qbasictimer.h:
 
 /usr/include/qt/QtCore/qfile.h:
-
-/usr/include/qt/QtWidgets/qdesktopwidget.h:
-
-/usr/include/qt/QtCore/QEventLoop:
-
-/usr/include/qt/QtCore/qmap.h:
-
-/usr/include/qt/QtCore/qvariant.h:
-
-/usr/include/qt/QtGui/qguiapplication.h:
-
-/usr/include/qt/QtCore/qeventloop.h:
-
-/usr/include/qt/QtCore/qcoreevent.h:
-
-/usr/include/qt/QtCore/qcoreapplication.h:
-
-/usr/include/qt/QtWidgets/qapplication.h:
-
-/usr/include/qt/QtWidgets/QApplication:
 
 demo_autogen/mocs_compilation.cpp:
 
@@ -1103,6 +1111,8 @@ demo_autogen/mocs_compilation.cpp:
 
 /usr/include/qt/QtGui/qtextoption.h:
 
+/usr/include/qt/QtWidgets/QWidget:
+
 /usr/include/c++/11.2.0/bits/istream.tcc:
 
 /usr/include/qt/QtWidgets/qsizepolicy.h:
@@ -1119,10 +1129,6 @@ demo_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/11.2.0/memory:
 
-/usr/include/qt/QtCore/qhash.h:
-
-/usr/include/qt/QtCore/qshareddata.h:
-
 /usr/include/c++/11.2.0/bits/ostream.tcc:
 
 /usr/include/qt/QtGui/qpixmap.h:
@@ -1137,25 +1143,43 @@ demo_autogen/mocs_compilation.cpp:
 
 /usr/include/qt/QtCore/qdatastream.h:
 
-/usr/include/qt/QtGui/qcursor.h:
-
-/usr/include/qt/QtGui/qpolygon.h:
-
 /usr/include/qt/QtGui/qmatrix.h:
 
 /usr/include/qt/QtGui/qrgba64.h:
 
 /usr/include/qt/QtGui/qrgb.h:
 
+/usr/include/qt/QtGui/qpaintdevice.h:
+
+/usr/include/qt/QtWidgets/qwidget.h:
+
+/usr/include/qt/QtWidgets/qdesktopwidget.h:
+
+/usr/include/qt/QtCore/qshareddata.h:
+
+/usr/include/qt/QtCore/qhash.h:
+
+/usr/include/qt/QtCore/qmap.h:
+
+/usr/include/qt/QtCore/qvariant.h:
+
+/usr/include/qt/QtGui/qguiapplication.h:
+
+/usr/include/qt/QtGui/qpolygon.h:
+
+/usr/include/qt/QtGui/qcursor.h:
+
+/usr/include/qt/QtCore/qmargins.h:
+
+/usr/include/qt/QtCore/qsize.h:
+
 /usr/include/c++/11.2.0/bits/enable_special_members.h:
 
 /usr/include/qt/QtCore/qpoint.h:
 
-/usr/include/qt/QtCore/qsize.h:
+/usr/include/qt/QtCore/qeventloop.h:
 
-/usr/include/qt/QtGui/qpaintdevice.h:
-
-/usr/include/qt/QtCore/qmargins.h:
+/usr/include/qt/QtCore/qcoreevent.h:
 
 /usr/include/c++/11.2.0/bits/parse_numbers.h:
 
@@ -1379,17 +1403,17 @@ demo_autogen/EWIEGA46WW/moc_RayWidget.cpp:
 
 /usr/include/qt/QtCore/qprocessordetection.h:
 
-/usr/include/qt/QtCore/qconfig.h:
+/usr/include/qt/QtWidgets/QApplication:
 
-/usr/include/qt/QtCore/qatomic.h:
+/usr/include/qt/QtWidgets/qapplication.h:
 
-/usr/include/c++/11.2.0/algorithm:
+/usr/include/c++/11.2.0/bits/stl_relops.h:
+
+/usr/include/c++/11.2.0/map:
+
+/usr/include/qt/QtCore/qiterator.h:
 
 /usr/include/bits/endian.h:
-
-/usr/include/qt/QtCore/QTimer:
-
-/usr/include/qt/QtGui/qtguiglobal.h:
 
 /usr/include/c++/11.2.0/bits/stl_iterator_base_funcs.h:
 
@@ -1411,23 +1435,15 @@ demo_autogen/EWIEGA46WW/moc_RayWidget.cpp:
 
 /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/gthr.h:
 
-/usr/include/bits/long-double.h:
+/usr/include/qt/QtCore/qtypeinfo.h:
+
+/usr/include/qt/QtCore/QTimer:
+
+/usr/include/qt/QtGui/qtguiglobal.h:
 
 /usr/include/c++/11.2.0/ext/type_traits.h:
 
-/usr/include/qt/QtCore/qtypeinfo.h:
-
-/usr/include/qt/QtWidgets/QWidget:
-
-/usr/include/c++/11.2.0/unordered_map:
-
-RayWidget.cpp:
-
-/usr/include/bits/types/FILE.h:
-
-/usr/include/c++/11.2.0/bits/concept_check.h:
-
-/usr/include/c++/11.2.0/bits/stl_iterator.h:
+/usr/include/bits/long-double.h:
 
 /usr/include/c++/11.2.0/bits/functional_hash.h:
 
@@ -1471,11 +1487,15 @@ RayWidget.cpp:
 
 /usr/include/qt/QtCore/qgenericatomic.h:
 
-/usr/include/qt/QtWidgets/qwidget.h:
+/usr/include/qt/QtCore/qconfig.h:
 
-/usr/include/bits/types/struct_tm.h:
+/usr/include/qt/QtCore/qatomic.h:
+
+/usr/include/c++/11.2.0/algorithm:
 
 /usr/include/c++/11.2.0/bits/stl_algobase.h:
+
+/usr/include/bits/types/struct_tm.h:
 
 /usr/include/bits/atomic_wide_counter.h:
 
@@ -1533,6 +1553,22 @@ RayWidget.cpp:
 
 /usr/include/strings.h:
 
+/usr/include/c++/11.2.0/unordered_map:
+
+RayWidget.cpp:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/c++/11.2.0/bits/concept_check.h:
+
+/usr/include/c++/11.2.0/bits/stl_iterator.h:
+
+/usr/include/qt/QtGui/qwindowdefs.h:
+
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/include/c++/11.2.0/bits/uses_allocator.h:
+
 /usr/include/c++/11.2.0/cstddef:
 
 /usr/include/c++/11.2.0/bits/std_abs.h:
@@ -1542,12 +1578,6 @@ RayWidget.h:
 /usr/include/bits/floatn.h:
 
 /usr/include/qt/QtCore/qstringalgorithms.h:
-
-/usr/include/c++/11.2.0/bits/stl_relops.h:
-
-/usr/include/c++/11.2.0/map:
-
-/usr/include/qt/QtCore/qiterator.h:
 
 /usr/include/qt/QtGui/qpen.h:
 
@@ -1599,21 +1629,7 @@ RayWidget.h:
 
 /usr/include/qt/QtGui/qtgui-config.h:
 
-/usr/include/bits/types/__sigset_t.h:
-
-/usr/include/c++/11.2.0/bits/uses_allocator.h:
-
-/usr/include/qt/QtGui/qwindowdefs.h:
-
-/usr/include/qt/QtCore/qstringmatcher.h:
-
-/usr/include/qt/QtCore/qobjectdefs.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h:
-
-/usr/include/qt/QtCore/qnamespace.h:
-
-/usr/include/qt/QtCore/qobject.h:
+/usr/include/qt/QtCore/qcoreapplication.h:
 
 /usr/include/qt/QtCore/qchar.h:
 
@@ -1626,6 +1642,10 @@ RayWidget.h:
 /usr/include/bits/stdint-uintn.h:
 
 /usr/include/asm/errno.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h:
+
+/usr/include/qt/QtCore/qnamespace.h:
 
 /usr/include/qt/QtCore/qarraydata.h:
 
@@ -1784,6 +1804,12 @@ main.cpp:
 /usr/include/c++/11.2.0/exception:
 
 /usr/include/qt/QtCore/qhashfunctions.h:
+
+/usr/include/qt/QtCore/qobject.h:
+
+/usr/include/qt/QtCore/qstringmatcher.h:
+
+/usr/include/qt/QtCore/qobjectdefs.h:
 
 /usr/include/c++/11.2.0/ios:
 
