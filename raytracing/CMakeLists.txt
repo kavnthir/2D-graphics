@@ -3,6 +3,7 @@ project(raytracing CXX)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 find_package(Qt5Widgets REQUIRED)
 
 add_executable(demo main.cpp RayWidget.cpp RayWidget.h default.qss stylesheet.qrc)

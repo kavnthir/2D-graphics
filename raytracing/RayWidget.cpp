@@ -1,11 +1,11 @@
 #include "RayWidget.h"
 
 RayWidget::RayWidget(QWidget * parent): QWidget(parent){
-	pos = QPoint(-1,-1);
+	pos = QPointF();
 }
 
 void RayWidget::updatePos(){
-	if(pos == QCursor::pos())
+	if(pos == QCursor::pos() - frameGeometry().topLeft())
 		return;
 
 	pos = QCursor::pos() - frameGeometry().topLeft();
