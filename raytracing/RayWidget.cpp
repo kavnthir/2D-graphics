@@ -43,10 +43,10 @@ void RayWidget::paintEvent(QPaintEvent *event){
 	QDesktopWidget desktop;
 	QPainter painter(this);
 
-	QPen pen(Qt::white);
+	QPen pen(Qt::gray);
 	pen.setWidthF(RAY_WIDTH);
 
-	QPen penWalls(Qt::gray);
+	QPen penWalls(Qt::white);
 	penWalls.setWidthF(WALL_WIDTH);
 
 	painter.setPen(pen);
@@ -78,7 +78,7 @@ void RayWidget::paintEvent(QPaintEvent *event){
 
 			QPointF temp = QPointF( xN / D, yN / D );
 
-			// check if the point lives on the line segment defined by the wall
+			// check if the point lives on the line segment defined by the wall and the ray
 			if(!onSegment(walls[j].p1(), temp, walls[j].p2()))
 				continue;
 			if(!onSegment(pos, temp, QPointF(x,y)))
@@ -93,10 +93,16 @@ void RayWidget::paintEvent(QPaintEvent *event){
 		}
 
 		// if ray intersects wall, draw that point, otherwise draw max length line
-		if(!intersect.isNull())
+		if(!intersect.isNull()){
+			// pen.setColor(Qt::gray);
+			// painter.setPen(pen);
 			painter.drawLine(pos, intersect);
-		else
+		}else{
+			// pen.setColor(Qt::red);
+			// painter.setPen(pen);
 			painter.drawLine(pos, QPointF(x, y));
+		}
+
 }
 
 	// draw walls
