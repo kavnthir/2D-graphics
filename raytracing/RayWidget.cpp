@@ -7,11 +7,17 @@ bool onSegment(QPointF p, QPointF q, QPointF r) {
 }
 
 RayWidget::RayWidget(QWidget * parent): QWidget(parent){
-	QDesktopWidget desktop;
-	int width = desktop.width() * 0.7;
-	int height = desktop.height() * 0.7;
 
+	// cursor position is null
 	pos = QPointF();
+
+	// seed random number generator
+	srand(time(0));
+
+	// randomly spawn walls
+	
+	int width = QDesktopWidget().width() * 0.7;
+	int height = QDesktopWidget().height() * 0.7;
 
 	for(int i = 0; i < WALL_COUNT; i++){
 		int start_x = rand() % width;
@@ -25,11 +31,10 @@ RayWidget::RayWidget(QWidget * parent): QWidget(parent){
 }
 
 void RayWidget::updatePos(){
+	// if cursor has moved, redraw
 	if(pos == QCursor::pos() - frameGeometry().topLeft())
 		return;
-
 	pos = QCursor::pos() - frameGeometry().topLeft();
-
 	this->update();
 }
 
@@ -37,14 +42,17 @@ void RayWidget::paintEvent(QPaintEvent *event){
 
 	QDesktopWidget desktop;
 	QPainter painter(this);
+
 	QPen pen(Qt::white);
-	pen.setWidthF(1);
-	painter.setPen(pen);
+	pen.setWidthF(RAY_WIDTH);
+
 	QPen penWalls(Qt::gray);
-	penWalls.setWidthF(5);
+	penWalls.setWidthF(WALL_WIDTH);
 
-	for(double i = 0; i < 360; i+=.5){
+	painter.setPen(pen);
+	for(double i = 0; i < 2 * M_PI; i+= 2 * M_PI / RAY_COUNT){
 
+		// convert from polar form
 		double x = desktop.width() * 2 * cos(i); 
 		double y = desktop.width() * 2 * sin(i); 
 
@@ -52,47 +60,49 @@ void RayWidget::paintEvent(QPaintEvent *event){
 		QPointF intersect;
 
 		for(int j = 0;  j < WALL_COUNT; j++){
+
+			// return point at which ray intersects line
 			double x1 = ray.x1();
 			double x2 = ray.x2();
 			double x3 = walls[j].x1();
 			double x4 = walls[j].x2();
+
 			double y1 = ray.y1();
 			double y2 = ray.y2();
 			double y3 = walls[j].y1();
 			double y4 = walls[j].y2();
 
-			double D = ( x1 - x2 )*( y3 - y4 ) - ( y1 - y2 )*( x3 - x4 );	
-
 			double xN = (x1*y2 - y1*x2)*(x3 - x4) - (x1 -x2)*(x3*y4 - y3*x4);
 			double yN = (x1*y2 - y1*x2)*(y3 - y4) - (y1 -y2)*(x3*y4 - y3*x4);
+			double D = ( x1 - x2 )*( y3 - y4 ) - ( y1 - y2 )*( x3 - x4 );	
 
 			QPointF temp = QPointF( xN / D, yN / D );
 
-			if(!onSegment(walls[j].p1(), temp, walls[j].p2()) || !onSegment(pos, temp, QPointF(x,y))){
+			// check if the point lives on the line segment defined by the wall
+			if(!onSegment(walls[j].p1(), temp, walls[j].p2()))
 				continue;
-			}
+			if(!onSegment(pos, temp, QPointF(x,y)))
+				continue;
 
-			QLineF calc(intersect, pos);
-			QLineF calc2(temp, pos);
-			if(intersect.isNull() || calc.length() > calc2.length()){
+			// if current wall intersection is closer than previous ones, it is the new intersect
+			QLineF min_ray(intersect, pos);
+			QLineF current_ray(temp, pos);
+			if(intersect.isNull() || min_ray.length() > current_ray.length())
 				intersect = temp;
-			}
 
 		}
 
-		if(!intersect.isNull()){
+		// if ray intersects wall, draw that point, otherwise draw max length line
+		if(!intersect.isNull())
 			painter.drawLine(pos, intersect);
-			continue;
-		}
-		painter.drawLine(pos, QPointF(x, y));
-	}
-
-	painter.setPen(penWalls);
-	painter.resetTransform();
-	for(int i = 0; i < WALL_COUNT; i++){
-		painter.drawLine(walls[i]);
-	}
-	
+		else
+			painter.drawLine(pos, QPointF(x, y));
 }
 
+	// draw walls
+	painter.setPen(penWalls);
+	for(int i = 0; i < WALL_COUNT; i++)
+		painter.drawLine(walls[i]);
+	
+}
 

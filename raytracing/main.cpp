@@ -17,7 +17,7 @@ int main(int argc, char *argv[]){
 	QCoreApplication::setApplicationName("Raytracing Demo");
 
 	// Load Stylesheet
-	QFile file("default.qss");
+	QFile file("../default.qss");
 	file.open(QFile::ReadOnly);
 	QString style = QLatin1String(file.readAll());
 	qApp->setStyleSheet(style);
